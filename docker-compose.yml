@@ -1,0 +1,9 @@
+myapp:
+  build: .
+  links:
+    - myredis:redis
+  ports:
+    - 80:5000
+
+myredis:
+  image: redis
